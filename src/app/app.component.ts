@@ -1,10 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+/*
+  DoCheck,
+  AfterContentInit,
+  AfterContentChecked,
+  AfterViewInit,
+  AfterViewChecked
+*/
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template:`
+    <!-- <app-data-binding></app-data-binding> -->
+    <!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
+    <app-diretivas-atributos></app-diretivas-atributos>
+    <router-outlet></router-outlet>
+  `
 })
-export class AppComponent {
-  title = 'meu-primeiro-projeto';
+export class AppComponent implements OnInit {
+
+
+  constructor(){
+  }
+
+  ngOnInit(): void {}
+
 }
