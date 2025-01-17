@@ -15,6 +15,17 @@
     <!-- <app-input [contador] = "addValue"></app-input>
     <button (click)="add()">Incrementar</button> -->
 
-    <app-output></app-output>
+    <!-- <ng-template [ngIf] = "getDados">
+      <h3>Componente Pai</h3>
+      <h1>{{getDados.nome}}</h1>
+      <h1>{{getDados.idade}}</h1>
+      <hr>
+    </ng-template>
+    <app-output (enviarDados) = "setDados($event)"></app-output>
 
-    <router-outlet></router-outlet>
+    <router-outlet></router-outlet> -->
+
+    <hr>
+
+    <app-food-list></app-food-list>
+

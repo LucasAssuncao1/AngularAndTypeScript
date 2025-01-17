@@ -17,6 +17,12 @@ export class AppComponent implements OnInit {
 
   public addValue:number = 1;
 
+  public getDados: {nome:string , idade:number} | undefined;
+
+  public setDados (event: any){
+    this.getDados = event;
+  }
+
   public add(){
     this.addValue ++;
   }
