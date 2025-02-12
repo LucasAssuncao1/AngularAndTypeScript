@@ -1,4 +1,4 @@
-<form #form = "ngForm">
+<form #form = "ngForm" (ngSubmit)="submitForm(form)">
   <label>
     Nome: <input type="text" name="nome" #nome="ngModel" [ngModel]="nome.value" required>
     <span *ngIf= "!nome.valid && (nome.dirty && nome.touched)">
@@ -62,9 +62,10 @@
       </option>
     </select>
   </label>
-<br>
-<br>
+  <br>
+  <br>
 
+  <button [disabled]="form.invalid">Enviar dados </button>
 </form>
 <br>
 <br>
